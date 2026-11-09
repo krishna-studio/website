@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Krishna Studio</title>
+<meta name="description" content="Krishna Studio is a small software studio of five college friends. We sketch ideas first, then build and ship them.">
+<meta name="theme-color" content="#6965db"><meta property="og:title" content="Krishna Studio"><meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✏️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header id="site-header"></header>
+<main>
+<div class="wrap hero">
+<svg class="doodle" style="left:2%;top:3rem" width="70" height="70" viewBox="0 0 70 70" aria-hidden="true"><path d="M35 6l7 19 20 1-16 12 6 20-17-11-17 11 6-20L8 26l20-1z"/></svg>
+<svg class="doodle" style="right:3%;top:7rem" width="110" height="60" viewBox="0 0 110 60" aria-hidden="true"><path d="M5 50C30 5 70 5 100 40M100 40l-4-20M100 40l-20-4"/></svg>
+<h1>We sketch it. Then we <span class="scrib">ship it<svg viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M4 12C40 2 70 18 105 9s60 5 92-3"/></svg></span>.</h1>
+<p class="lead">Krishna Studio is five college friends making software together. Every idea starts as a rough drawing and ends up as something real.</p>
+<div class="cta"><a class="btn" href="work.html">See what we’re making</a><a class="btn alt" href="about.html">Meet the team</a></div>
+<div class="board" id="board" aria-label="Draggable team notes">
+<svg class="arrows" id="arrows" aria-hidden="true"></svg>
+<div class="note sketch y" data-id="ram" style="left:5%;top:30px;--rot:-3deg"><div class="av">R</div>Ramkrishna<small>founder</small></div>
+<div class="note sketch p" data-id="kee" style="left:38%;top:0;--rot:2deg"><div class="av">K</div>Keerthana<small>building the site</small></div>
+<div class="note sketch b" data-id="anj" style="left:72%;top:40px;--rot:-2deg"><div class="av">A</div>Anjali<small>joining soon</small></div>
+<div class="note sketch g" data-id="usm" style="left:18%;top:195px;--rot:3deg"><div class="av">U</div>Usman<small>joining soon</small></div>
+<div class="note sketch v" data-id="tal" style="left:58%;top:205px;--rot:-3deg"><div class="av">T</div>Talha<small>joining soon</small></div>
+<span class="hint">psst, drag us around</span>
+</div></div>
+<section><div class="wrap">
+<h2 class="h2">What we care about</h2>
+<p class="sub">We’re new, so we keep our promises small and real.</p>
+<div class="grid">
+<article class="card sketch y"><span class="ico" aria-hidden="true">✏️</span><h3>Sketch first</h3><p>We talk through every idea on a whiteboard before anyone writes code. Cheap to change, easy to understand.</p></article>
+<article class="card sketch b"><span class="ico" aria-hidden="true">🎯</span><h3>Small and sharp</h3><p>We would rather ship one thing that works well than ten things that almost do.</p></article>
+<article class="card sketch g"><span class="ico" aria-hidden="true">🤝</span><h3>Friends first</h3><p>We met in college and we’re building the studio we wished we could join. Learning together is the point.</p></article>
+</div></div></section>
+<section><div class="wrap">
+<h2 class="h2">How a project goes</h2>
+<p class="sub">The same three steps, every time.</p>
+<div class="flow">
+<article class="card sketch p"><h3><span>1.</span> Draw it</h3><p>Rough sketches, flows and a plain-language plan.</p></article><span class="arr" aria-hidden="true">➜</span>
+<article class="card sketch v"><h3><span>2.</span> Build it</h3><p>Small steps, quick reviews, a working version early.</p></article><span class="arr" aria-hidden="true">➜</span>
+<article class="card sketch y"><h3><span>3.</span> Ship it</h3><p>Launch, listen, then make it better.</p></article>
+</div></div></section>
+<section><div class="wrap">
+<h2 class="h2">Your turn to sketch</h2>
+<p class="sub">This is how every Krishna Studio project starts. Pick a tool and draw something, then save it as an image.</p>
+<div class="tools sketch" role="toolbar" aria-label="Drawing tools">
+<button data-tool="pen" aria-pressed="true">✏️ Pen</button><button data-tool="rect" aria-pressed="false">▭ Box</button><button data-tool="oval" aria-pressed="false">◯ Circle</button><button data-tool="arrow" aria-pressed="false">➜ Arrow</button>
+<span class="sep"></span>
+<button class="sw" data-col="ink" aria-label="Black" aria-pressed="true" style="background:var(--ink)"></button><button class="sw" data-col="brand" aria-label="Purple" aria-pressed="false" style="background:#6965db"></button><button class="sw" data-col="red" aria-label="Red" aria-pressed="false" style="background:#e03131"></button><button class="sw" data-col="green" aria-label="Green" aria-pressed="false" style="background:#2f9e44"></button>
+<span class="sep"></span>
+<button id="undo">↶ Undo</button><button id="clear">🗑 Clear</button><button id="save">⬇ Save</button>
+</div>
+<div class="canvas-wrap sketch"><canvas id="cv" aria-label="Drawing canvas"></canvas><div class="cv-hint" id="cvhint">draw something here…</div></div>
+</div></section>
+<section><div class="wrap"><div class="band sketch"><h2>Got an idea? Let’s talk.</h2><p>Whether it’s a project, a question or just hello, we’d like to hear from you.</p><div class="cta"><a class="btn" href="contact.html">Get in touch</a></div></div></div></section>
+</main>
+<footer id="site-footer"></footer>
+<script src="assets/main.js"></script>
+</body>
+</html>
